@@ -1,0 +1,29 @@
+mat-toolbar {
+    height: 100%;
+}
+
+.spacer {
+    width: 25%;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.route-card-container {
+    margin: 5%;
+    width: 10%;
+    min-height: 200px;
+    display: inline-block;
+    text-align: center;
+}
+
+.material-icons {
+    font-size: 4em;
+}
+
+.card {
+    cursor: pointer;
+}
