@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>FACTS</h1>
+  <mat-card class="card" *ngFor="let f of facts; let i = index">
+    <mat-card-title>
+      Wisdom # {{i + 1}}
+    </mat-card-title>
+    <mat-card-content>
+      <p>{{f.description}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>>

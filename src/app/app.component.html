@@ -2,13 +2,13 @@
 <mat-toolbar class="mat-elevation-z6" color="primary">
   <div class="spacer">
   </div>
-  <h1>
-    Welcome to {{ title }}!
+  <h1 routerLink="/">
+      Welcome to {{ title }}!
   </h1>
 </mat-toolbar>
 
 <div class="route-card-container" *ngFor="let cr of cardRoutes">
-  <mat-card class="card">
+  <mat-card class="card" routerLink="/{{cr.route}}">
     <mat-card-title>
       {{cr.title}}
     </mat-card-title>
@@ -20,3 +20,5 @@
     </mat-card-content>
   </mat-card>
 </div>
+
+<router-outlet></router-outlet>

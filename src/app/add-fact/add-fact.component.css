@@ -1,0 +1,9 @@
+.container {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form {
+    border: 1px dotted #000000;
+    padding: 2%;
+}
