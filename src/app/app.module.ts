@@ -3,12 +3,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { ROUTES } from './routes';
 import { MatButtonModule, MatCardModule, MatCheckboxModule, MatRadioModule,
          MatTooltipModule, MatToolbarModule, MatSliderModule, MatFormFieldModule,
-         MatInputModule } from '@angular/material';
+         MatInputModule, MatSnackBarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { FactComponent } from './fact/fact.component';
@@ -41,7 +41,9 @@ import { FactService } from './fact.service';
     MatSliderModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSnackBarModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [FactService],

@@ -1,3 +1,5 @@
 export class Fact {
-    description: string;
+    constructor(
+       public description: string
+    ) { }
 }

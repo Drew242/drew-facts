@@ -30,4 +30,8 @@ export class FactService {
         return this.data;
     }
 
+    addFact(fact) {
+        return this.http.post(`${this.baseUrl}${'/facts'}`, fact);
+    }
+
 }
