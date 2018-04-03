@@ -16,6 +16,7 @@ import { FactListComponent } from './fact-list/fact-list.component';
 import { ErrorComponent } from './error/error.component';
 import { AddFactComponent } from './add-fact/add-fact.component';
 import { FactService } from './fact.service';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FactService } from './fact.service';
     FactComponent,
     FactListComponent,
     ErrorComponent,
-    AddFactComponent
+    AddFactComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
