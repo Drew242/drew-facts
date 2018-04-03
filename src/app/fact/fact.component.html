@@ -8,7 +8,8 @@
       <p>ID: {{fact._id}}</p>
     </mat-card-content>
     <mat-card-footer>
-      <p>Edit | Delete</p>
+      <i class="material-icons" color="accent">swap_vertical_circle</i>
+      <i class="material-icons" id="delete" (click)="deleteFact()">delete_forever</i>
     </mat-card-footer>
   </mat-card>
 </div>

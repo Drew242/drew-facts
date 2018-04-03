@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, Routes } from '@angular/router';
 
 import { Fact } from '../fact';
 import { FactService } from '../fact.service';
@@ -13,7 +13,7 @@ import { FactService } from '../fact.service';
 export class FactComponent implements OnInit {
   fact: Fact;
 
-  constructor(private factService: FactService, private route: ActivatedRoute) { }
+  constructor(private factService: FactService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.getFact();
@@ -25,6 +25,13 @@ export class FactComponent implements OnInit {
       .subscribe(
         (fact) => this.fact = fact
       );
+  }
+
+  deleteFact() {
+    const id = this.route.snapshot.paramMap.get('id');
+    this.factService.deleteFact(id)
+      .subscribe();
+    this.router.navigate(['/welcome']);
   }
 
 }

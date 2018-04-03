@@ -39,4 +39,9 @@ export class FactService {
         return this.http.post(`${this.baseUrl}`, fact);
     }
 
+    deleteFact(fact_id) {
+        console.log(fact_id);
+        return this.http.delete(`${this.baseUrl}/${fact_id}`);
+    }
+
 }
